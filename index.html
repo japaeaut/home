@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estética Automotiva Japan</title>
+
+
+
+    <meta
+            name="keywords"
+            content="estética automotiva curitiba, polimento curitiba, vitrificação automotiva, higienização automotiva, detail curitiba"
+    />
+
+    <meta name="author" content="Estética Automotiva Japan" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Estética Automotiva Japan" />
+
+    <meta
+            property="og:description"
+            content="Polimento técnico, vitrificação e estética automotiva premium em Curitiba."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta
+            property="og:image"
+            content="https://SEUUSUARIO.github.io/imagem-preview.jpg"
+    />
+
+    <meta
+            property="og:url"
+            content="https://SEUUSUARIO.github.io/"
+    />
+
+    <meta name="theme-color" content="#0a0a0a" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Montserrat', sans-serif;
+          background: #050505;
+          color: white;
+          overflow-x: hidden;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .container {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        header {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 40px 0;
+          background:
+            linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.98)),
+            radial-gradient(circle at top, rgba(255,0,0,0.18), transparent 40%);
+        }
+
+        .hero {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 24px;
+        }
+
+        .logo {
+          width: 100%;
+          max-width: 320px;
+          border-radius: 50%;
+          box-shadow: 0 0 40px rgba(255,0,0,0.18);
+        }
+
+        .hero h1 {
+          font-size: 2.2rem;
+          font-weight: 800;
+          line-height: 1.1;
+          text-transform: uppercase;
+        }
+
+        .hero h1 span {
+          color: #ff1b1b;
+        }
+
+        .hero p {
+          color: #d3d3d3;
+          font-size: 1rem;
+          line-height: 1.7;
+          max-width: 650px;
+        }
+
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          width: 100%;
+          margin-top: 10px;
+        }
+
+        .btn {
+          width: 100%;
+          padding: 16px 20px;
+          border-radius: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: 0.2s ease;
+          text-align: center;
+        }
+
+        .btn-whatsapp {
+          background: #ff1b1b;
+          color: white;
+          box-shadow: 0 0 18px rgba(255, 0, 0, 0.35);
+        }
+
+        .btn-instagram {
+          border: 2px solid #ff1b1b;
+          color: white;
+          background: transparent;
+        }
+
+        .btn:hover {
+          transform: translateY(-2px);
+        }
+
+        section {
+          padding: 80px 0;
+        }
+
+        .section-title {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 40px;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+
+        .section-title span {
+          color: #ff1b1b;
+        }
+
+        .services {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+
+        .service-card {
+          background: #101010;
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 20px;
+          padding: 24px;
+          transition: 0.2s ease;
+        }
+
+        .service-card:hover {
+          border-color: rgba(255,0,0,0.4);
+          transform: translateY(-4px);
+        }
+
+        .service-card h3 {
+          font-size: 1.2rem;
+          margin-bottom: 12px;
+          color: #ff1b1b;
+        }
+
+        .service-card p {
+          color: #cfcfcf;
+          line-height: 1.7;
+        }
+
+.gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .gallery-card {
+      background: #101010;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      overflow: hidden;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: #050505;
+    }
+
+    .gallery-images img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-info {
+      padding: 22px;
+    }
+
+    .gallery-info h3 {
+      color: #ff1b1b;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .gallery-info p {
+      color: #d0d0d0;
+      line-height: 1.7;
+    }
+
+        .about {
+          background: #0c0c0c;
+        }
+
+        .about-box {
+          background: linear-gradient(145deg, #111111, #080808);
+          border: 1px solid rgba(255,255,255,0.08);
+          padding: 30px;
+          border-radius: 22px;
+          line-height: 1.9;
+          color: #d6d6d6;
+        }
+
+        .contact {
+          text-align: center;
+        }
+
+        .contact-card {
+          background: #101010;
+          border-radius: 24px;
+          padding: 30px 20px;
+          border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .contact-item {
+          margin-bottom: 22px;
+        }
+
+        .contact-item h3 {
+          color: #ff1b1b;
+          margin-bottom: 8px;
+          font-size: 1rem;
+          text-transform: uppercase;
+        }
+
+        .contact-item p {
+          color: #d6d6d6;
+          line-height: 1.7;
+        }
+
+        footer {
+          border-top: 1px solid rgba(255,255,255,0.08);
+          padding: 24px 0;
+          text-align: center;
+          color: #9c9c9c;
+          font-size: 0.9rem;
+        }
+
+        @media(min-width: 768px) {
+          .hero h1 {
+            font-size: 4rem;
+          }
+
+          .hero p {
+            font-size: 1.1rem;
+          }
+
+          .buttons {
+            flex-direction: row;
+            justify-content: center;
+          }
+
+          .btn {
+            width: auto;
+            min-width: 240px;
+          }
+
+          .services {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="hero">
+
+            <!-- TROCAR PELO NOME DA IMAGEM DA LOGO -->
+            <img src="japan_logo.png" alt="Estética Automotiva Japan" class="logo">
+
+            <h1>
+                ESTÉTICA AUTOMOTIVA <span>JAPAN</span>
+            </h1>
+            <h2>
+                Polimento automotivo em Curitiba
+            </h2>
+            <p>
+                Especialistas em estética automotiva premium.
+                Polimento técnico, vitrificação, higienização e acabamento de alto nível para deixar seu carro com aparência impecável.
+            </p>
+
+            <div class="buttons">
+                <a
+                        class="btn btn-whatsapp"
+                        href="https://wa.me/5541998852551"
+                        target="_blank"
+                >
+                    Chamar no WhatsApp
+                </a>
+
+                <a
+                        class="btn btn-instagram"
+                        href="https://instagram.com/japanesteticaautomotiva"
+                        target="_blank"
+                >
+                    Ver Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">
+            Nossos <span>Serviços</span>
+        </h2>
+
+        <div class="services">
+            <div class="service-card">
+                <h3>Polimento Técnico</h3>
+                <p>
+                    Remoção de riscos leves, marcas circulares e recuperação do brilho original da pintura.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>Vitrificação</h3>
+                <p>
+                    Proteção premium para a pintura com brilho intenso e maior resistência.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Higienização</h3>
+                <p>
+                    Limpeza detalhada interna com foco em conforto, acabamento e conservação.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">
+            Atendimento <span>Delivery</span>
+        </h2>
+
+        <div class="about-box">
+            Realizamos atendimento a domicílio com equipamentos e produtos profissionais.
+            Você recebe um serviço premium sem precisar sair de casa.
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+
+        <h2 class="section-title">
+            Sobre a <span>Japan</span>
+        </h2>
+
+        <div class="about-box">
+            Trabalhamos com foco em qualidade, acabamento e atenção aos detalhes.
+            Nosso objetivo é entregar um resultado premium e fazer cada veículo sair com aparência de carro de vitrine.
+
+            Atendimento com hora marcada e serviço realizado com máximo cuidado em cada etapa.
+        </div>
+
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+
+        <h2 class="section-title">
+            Antes & <span>Depois</span>
+        </h2>
+
+        <div class="gallery">
+
+            <div class="gallery-card">
+                <div class="gallery-images">
+                    <img src="img/limpeza-motor-antes.png" alt="Antes da limpeza de motor">
+                    <img src="img/limpeza-motor-depois.png" alt="Depois da limpeza de motor">
+                </div>
+
+                <div class="gallery-info">
+                    <h3>Limpeza de Motor</h3>
+                    <p>
+                        Recuperação visual e acabamento detalhado do compartimento do motor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-images">
+                    <img src="img/polimento-antes.png" alt="Antes do Polimento Técnico ">
+                    <img src="img/polimento-depois.png" alt="Depois do Polimento Técnico">
+                </div>
+
+                <div class="gallery-info">
+                    <h3>Polimento Técnico</h3>
+                    <p>
+                        Remoção de marcas, riscos leves e imperfeições da pintura,
+                        restaurando o brilho e profundidade do verniz com acabamento premium.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-images">
+                    <img src="img/restauracao-farol-antes.png" alt="Antes do Polimento Técnico ">
+                    <img src="img/restauracao-farol-depois.png" alt="Depois do Polimento Técnico">
+                </div>
+
+                <div class="gallery-info">
+                    <h3>Restauração de Faróis</h3>
+                    <p>
+                        Remoção de riscos, amarelamento e opacidade dos faróis,
+                        devolvendo transparência, brilho e melhorando a aparência do veículo.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-images">
+                    <img src="img/revitalizacao-escapamento-antes.png" alt="Antes do Polimento Técnico ">
+                    <img src="img/revitalizacao-escapamento-depois.png" alt="Depois do Polimento Técnico">
+                </div>
+
+                <div class="gallery-info">
+                    <h3>Revitalização de Escapamento</h3>
+                    <p>
+                        Limpeza e revitalização de peças metálicas com remoção de oxidação,
+                        resíduos e aspecto queimado, devolvendo acabamento mais limpo e renovado.
+                    </p>
+                </div>
+            </div>
+
+            <!--
+              DUPLICAR ESTE BLOCO PARA NOVOS SERVIÇOS
+
+              Exemplo:
+              polimento-antes.png
+              polimento-depois.png
+
+              farol-antes.png
+              farol-depois.png
+            -->
+
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+
+        <h2 class="section-title">
+            Entre em <span>Contato</span>
+        </h2>
+
+        <div class="contact-card">
+
+            <div class="contact-item">
+                <h3>WhatsApp</h3>
+                <p>(41) 99885-2551</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Instagram</h3>
+                <p>@japanesteticaautomotiva</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Endereço</h3>
+                <p>
+                    Adicionar endereço aqui<br>
+                    Curitiba - PR
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Estética Automotiva Japan • Todos os direitos reservados
+</footer>
+
+</body>
+</html>
